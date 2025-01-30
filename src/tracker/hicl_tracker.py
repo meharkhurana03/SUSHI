@@ -256,6 +256,7 @@ class HICLTracker:
         logs = {"Loss": [], "Loss_per_Depth": [[] for j in range(self.config.hicl_depth)], "Time": []}
 
         for i, train_batch in enumerate(self.train_dataloader):
+
             t_start = time.time()
 
             # Iteration update
